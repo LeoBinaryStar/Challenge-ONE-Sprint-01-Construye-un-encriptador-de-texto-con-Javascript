@@ -1,0 +1,26 @@
+body{
+	background-color: #DAFAEE;
+}
+
+.alura{
+	position: absolute;
+	margin: 15px 0 0 35px;
+}
+
+.caja-header{
+	width: 45%;
+	position:static;
+	margin: 0 auto;
+	padding: 5px 0;
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+	font-size: small;
+	color: #4b2bbe;
+	background-color: #a2fad8;
+	border-radius: 45px;
+	box-shadow: #58FCAD 8px 6px;
+}
+
+.challenge{
+	font-style: italic;
+}
