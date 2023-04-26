@@ -10,7 +10,7 @@ body{
 
 .caja-header{
 	width: 45%;
-	position:static;
+	position: static;
 	margin: 0 auto;
 	padding: 5px 0;
 	text-align: center;
@@ -28,7 +28,6 @@ body{
 .challenge{
 	font-style: italic;
 }
-
 
 /*Inicia sección del texto a encriptar*/
 .caja-encriptar{
@@ -64,6 +63,7 @@ body{
 	margin: 0 0 0 0;
 }
 
+/*Botones*/
 .botones{
 	width: 940px;
 	position: relative;
@@ -93,4 +93,16 @@ body{
 .btn-desencriptar{
 	background-color: #D8DFE8;
 	color: #0A3871;
+}
+
+/*Texto procesado*/
+.caja-texto-procesado{
+	width: 940px;
+	display: inline;
+	margin: 5px auto;
+	padding: 20px 0;
+}
+
+.lupa{
+	width: 15%
 }
