@@ -1,0 +1,214 @@
+body{
+	background-color: #DAFAEE;
+}
+
+/*Grid de la pagina*/
+.grid-layout{
+	display: grid;
+	width: 90%;
+	grid-template-columns: repeat(3,1fr);
+	grid-template-rows: repeat(4,1fr);
+	grid-template-areas:
+	"head head content2"
+	"content1 content1 content2"
+	"content1 content1 content2"
+	"content1 content1 content2";
+	justify-content: stretch;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+/*Distribución*/
+
+.content-derecha{
+	grid-area: content1;
+}
+
+.content-izquierda{
+	grid-area: content2;
+}
+
+
+
+/*Header*/
+.alura{
+	position: absolute;
+	display: block;
+	margin: 15px 0 0 35px;
+}
+
+.caja-header{
+	width: 130%;
+	grid-area: "head";
+	position: relative;
+	display: block;
+	margin:  0 30%;
+	padding: 5px 0 5px 0;
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+	font-size: small;
+	color: #4b2bbe;
+	background-color: #a2fad8;
+	border-radius: 45px;
+	box-shadow: #58FCAD 8px 6px;
+}
+.caja-header h2{
+	font-size: medium;
+}
+
+.challenge{
+	font-style: italic;
+}
+
+/*Inicia sección del texto a encriptar*/
+.caja-encriptar{
+	background-color: #DAFAEE;
+}
+
+.texto-encriptar{
+	width: 60%;
+	height: 25rem;
+	resize: none;
+	background-color: #DAFAEE;
+	border: none;
+	outline:none;
+	font-size: x-large;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	color: #230edb;
+}
+
+.texto-encriptar::placeholder {
+	color: #5849e4;
+}
+
+.informacion{
+	width: 1.4rem;
+}
+
+.texto-informacion{
+	font: 1em sans-serif;
+	color: #2c2099;
+	margin: 0 0 0 0;
+}
+
+/*Botones*/
+.botones{
+	width: 940px;
+	position: relative;
+	margin: 5px auto;
+	padding: 10px 0;
+}
+
+.botones button{
+	width: 31%;
+	height: 3.5em;
+	border-radius: 120px;
+	border: black;
+	box-shadow: black 2px 2.5px;
+}
+
+.botones button:hover{
+	transform: scale(1.04);
+	/*Para obscurecer el color*/
+	filter: brightness(75%);
+}
+
+.btn-encriptar{
+	background-color: #0A3871;
+	color: #D8DFE8;
+}
+
+.btn-desencriptar{
+	background-color: #D8DFE8;
+	color: #0A3871;
+}
+
+/*Texto procesado*/
+.caja-texto-procesado{
+	height: 90%;
+	background-color: #f9fffc;
+	border: 0.15em solid #58FCAD;
+	border-radius: 50px;
+
+}
+
+.busqueda{
+	width: 55%;
+	margin: 20%;
+	opacity: 0.88;
+	border-radius: 15px;
+}
+
+.texto-procesado{
+	display: block;
+	justify-content: center;
+	margin: 10% 10%;
+	text-align: center;
+	width: 20em;
+}
+
+.texto-procesado strong{
+	font: 1.2em sans-serif;
+	font-weight: bold;
+	color: #0A3871;
+}
+
+.texto-procesado p{
+	font: 1em sans-serif;
+	font-weight: 300;
+	color: #2387C3;
+	word-wrap: break-word
+}
+
+.texto-procesado button{
+	width: 40%;
+	height: 4em;
+	border-radius: 120px;
+	border: none;
+}
+
+.texto-procesado button:hover{
+	transform: scale(1.04);
+	/*Para obscurecer el color*/
+	filter: brightness(75%);
+}
+
+.btn-copiar{
+	background-color: #2387C3;
+	color: #ffffff;
+	box-shadow: #155279 2px 3px;
+}
+
+.btn-limpiar{
+	background-color: #b7ecfc;
+	color: #0b71b1;
+	box-shadow: #58FCAD 2px 3px;
+}
+
+.imagen-boton{
+	width: 1.75em;
+}
+
+/*Para el mensaje al copiar*/
+.mensaje {
+	position: fixed;
+	bottom: 8%;
+	right: 7%;
+	padding: 10px;
+	background: #F8E8DB;
+	border: 1.5px solid #A13F4B;
+	border-radius: 15px;
+	transition: transform 1s ease-in-out;
+}
+
+.mover {
+	transform: translateX(2000em);
+}
+
+.desaparecer{
+	display: none;
+}
+
+.aparecer{
+	display: inline-block;
+}
