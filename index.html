@@ -87,7 +87,7 @@
 <script>
 	/*Obteniendo el texto al dar click en el botón de encriptar*/
 	document.getElementById("encriptar").addEventListener("click", function () {
-		let textoIngresado = document.getElementById("textoIngresado").value;
+		let textoIngresado = document.getElementById("textoIngresado").value.toLowerCase();
 		let textoEncriptado = encriptar(textoIngresado);
 		document.getElementById("textoProcesado").innerHTML = textoEncriptado;
 
@@ -135,7 +135,7 @@
 	}
 
 	document.getElementById("desencriptar").addEventListener("click", function () {
-		let textoIngresado = document.getElementById("textoIngresado").value;
+		let textoIngresado = document.getElementById("textoIngresado").value.toLowerCase();
 		let textoEncriptado = desencriptar(textoIngresado);
 		document.getElementById("textoProcesado").innerHTML = textoEncriptado;
 
