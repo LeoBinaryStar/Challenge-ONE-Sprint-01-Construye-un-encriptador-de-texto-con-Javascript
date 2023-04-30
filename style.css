@@ -39,6 +39,7 @@ body{
 
 .caja-header{
 	width: 130%;
+	height: 45%;
 	grid-area: "head";
 	position: relative;
 	display: block;
@@ -46,17 +47,23 @@ body{
 	padding: 5px 0 5px 0;
 	text-align: center;
 	font-family: 'Montserrat', sans-serif;
-	font-size: small;
+	font-size:large;
 	color: #4b2bbe;
 	background-color: #a2fad8;
 	border-radius: 45px;
 	box-shadow: #58FCAD 8px 6px;
 }
+
+.caja-header h1{
+	font-weight: 600;
+}
+
 .caja-header h2{
 	font-size: medium;
 }
 
 .challenge{
+	margin-top: 0.5em;
 	font-style: italic;
 }
 
@@ -205,10 +212,32 @@ body{
 	transform: translateX(2000em);
 }
 
+/*Hacer desaparecer/aparecer la imagen y strong*/
 .desaparecer{
 	display: none;
 }
 
 .aparecer{
 	display: inline-block;
+}
+
+/*Footer*/
+.footer{
+	background-image: url(multimedia/space.png);
+	border-top: 1em solid #309cd242;
+	text-align: center;
+	padding: 40px;
+}
+
+
+
+.footer h3{
+	color: #ffffff;
+	filter: brightness(100%);
+}
+
+.imagen-footer{
+	filter: invert(100%);
+	width: 3em;
+	margin-left: 0.5em;
 }
